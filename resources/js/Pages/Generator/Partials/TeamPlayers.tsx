@@ -1,5 +1,4 @@
 import { iPlayer } from '@/types/interface';
-import { Link } from '@inertiajs/react';
 import { PropsWithChildren } from 'react';
 
 export default function TeamPlayers({
@@ -18,12 +17,7 @@ export default function TeamPlayers({
                     </span>
                 </div>
             </div>
-            <div>
-                <Link href={route('players.edit', player.player_id)}>
-                    {' '}
-                    {player.player_name}{' '}
-                </Link>
-            </div>
+            <div>{player.player_name}</div>
         </div>
     );
 }
